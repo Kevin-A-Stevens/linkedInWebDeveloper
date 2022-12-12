@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- images - 4 attributes you must add to all your img tags -->
+    <!-- src, alt, width, height -->
+    <!-- including the width and height attribute to tell the browser the size of the image will fix your site from jumping around as images continue to load -->
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie.jpg"
+      alt="Shiny black dog looking pensive"
+      width="500"
+      height="400"
+    />
+
+    <!--  image formats -->
+    <!-- We want high quality & small file size -->
+    <!--  4 file formats -->
+    <!-- gif - good for compressing large areas of a single color. bad for photos -->
+    <!-- svg - good for logos, icons -->
+    <!-- jpg - good for compressing photos -->
+    <!-- png - good for images that need transparency -->
+
+    <!-- responsive images -->
+    <!-- make several different files and list them as options in your HTML -->
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg"
+      alt="Shiny black dog looking pensive"
+      width="480"
+      height="360"
+    />
+
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg"
+      alt="Shiny black dog looking pensive"
+      width="480"
+      height="360"
+      srcset="
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg  2x,
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 3x,
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 4x
+      "
+    />
+
+    <!-- responsive width -->
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg"
+      alt="Shiny black dog looking pensive"
+      width="480"
+      height="360"
+      srcset="
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg   480w,
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg   960w,
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 1440w,
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 1920w
+      "
+    />
+
+    <!-- responsive pictures -->
+
+    <picture>
+      <source
+        media="(min-width:600px)"
+        srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg"
+      />
+      <source
+        srcset="
+          https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg
+        "
+      />
+      <img
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg"
+        alt="Shiny black dog looking pensive"
+        width="480"
+        height="360"
+      />
+    </picture>
+
+    <!-- figure and figcaption -->
+    <figure>
+      <img
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie2.png"
+        alt="Shiny black dog looking pensive"
+        width="960"
+        height="720"
+      />
+      <figcaption>Maggie the dog enjoys resting in a field</figcaption>
+    </figure>
+    <p>Become a Full-Stack Web Developer</p>
+    <p>section 6 media</p>
+    <p>
+      https://www.linkedin.com/learning/html-essential-training-4/audio?autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&resume=false
+    </p>
+  </body>
+</html>
