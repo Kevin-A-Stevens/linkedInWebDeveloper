@@ -1,5 +1,14 @@
 /* Global styles 
 -------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   color: #343434;
@@ -23,6 +32,7 @@ a:hover {
 header {
   background: #2f3051;
   color: #f7fff7;
+  text-align: center;
 }
 
 .projects a {
@@ -53,6 +63,27 @@ header {
   background: #a1c6d7;
 }
 
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+
+.project-item {
+  overflow: hidden;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
 /* Education section 
 -------------------*/
 
@@ -62,4 +93,17 @@ header {
 footer {
   background: #343434;
   color: #f7fff7;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
 }
