@@ -60,3 +60,21 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+// Add a navigation element to the DOM
+const navContent = `
+<li><a href="a">Home</a></li>
+<li><a href="a">About</a></li>
+<li><a href="a">Backpacks</a></li>
+<li><a href="a">Other things</a></li>
+<li><a href="a">Contact</a></li>
+`;
+
+const mainNav = document.createElement("nav");
+mainNav.classList.add("main-navigation");
+const navList = document.createElement("ul");
+navList.innerHTML = navContent;
+mainNav.append(navList);
+
+document.querySelector(".siteheader").append(mainNav);
+

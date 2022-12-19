@@ -19,8 +19,15 @@ const backpack = {
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
+  newPocketNum: function(newNum) {
+    this.pocketNum = newNum;
+  },
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("Old pocket number: ", backpack.pocketNum);
+backpack.newPocketNum(20);
+console.log("New pocket number: ", backpack.pocketNum);

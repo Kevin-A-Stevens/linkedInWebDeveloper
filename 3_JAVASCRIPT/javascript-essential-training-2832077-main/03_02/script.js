@@ -2,6 +2,8 @@
  * Create a Backpack object.
  */
 
+// this = this current object
+
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,

@@ -18,3 +18,9 @@ const everydayPack = new Backpack(
 
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
+console.log("Days since acquired:", everydayPack.backpackAge());
+
+const rightNow = new Date();
+console.log(rightNow);
+const newDateString = rightNow.toDateString();
+console.log(newDateString);

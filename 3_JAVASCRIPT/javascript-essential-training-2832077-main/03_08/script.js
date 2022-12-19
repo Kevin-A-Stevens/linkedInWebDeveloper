@@ -1,5 +1,6 @@
 /**
  * Create a Backpack object.
+ * A function inside an object is called a Method
  */
 
 const backpack = {
@@ -23,3 +24,12 @@ const backpack = {
 
 console.log("The backpack object:", backpack);
 console.log("The pocketNum value:", backpack.pocketNum);
+
+// How Methods work
+// We define them as functions inside an object
+// We call them using dot notation
+// We pass in the values to the Method
+console.log("Left before: ", backpack.strapLength.left);
+backpack.newStrapLength(10,15);
+console.log("Left after: ", backpack.strapLength.left);
+

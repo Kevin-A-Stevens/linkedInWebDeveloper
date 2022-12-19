@@ -20,3 +20,18 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("The backpack object: ", backpack);
+// Access a value in an object with dot notation
+// This is the preferred way of accessing object properties
+console.log("The pocketNum value: ", backpack.pocketNum);
+console.log("StrapLength left: ", backpack.strapLength.left);
+
+// Access a value in an object with bracket notation
+
+console.log("The pocketNum value: ", backpack["pocketNum"]);
+// Bracket notation allows more advanced things. This can't be done in dot notation
+var query = "pocketNum";
+console.log("The pocketNum value: ", backpack[query]);
+
+
