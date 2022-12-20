@@ -3,7 +3,7 @@
  * @link https://developer.mozilla.org/en-US/docs/Glossary/Function
  */
 
-// Function declaration:
+// Function declaration: hoisted to global scope and can be used anywhere
 function doSomeMath(a, b) {
   let c = a + b;
   return c;

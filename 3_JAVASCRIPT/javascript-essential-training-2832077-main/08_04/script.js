@@ -1,5 +1,5 @@
 /**
- * The arrow function
+ * The arrow function - can only be called after they are declared
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
  */
 
